@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id="title">COLLEGE LIFE & STUDENT EXPERIENCE SURVEY</h1>
+    <p id="description">Please fill out this survey to share your college experience</p>
+    <blockquote>"Every student has a story. Every experience matters."</blockquote>
+<form id="survey-form">
+    <!--name-->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br><br>
+    <!--email-->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+    <!--number--> <!--age-->
+<label id="number-label" for="number">Age:</label>
+<input type="number" id="number" name="age" min="16" max="100" placeholder="age">
+<br><br>
+
+<label id="name-label" for="college">College:</label>
+<input type="text" id="name" name="college" placeholer="Enter your college name">
+<br><br>
+<!--dropdown-->
+<label for="semester">What is your current semester?</label>
+<select id="semester" name="semester">
+    <option value="1">1st Sem</option>
+    <option value="2">2nd Sem</option>
+    <option value="3">3rd Sem</option>
+    <option value="4">4rth Sem</option>
+    <option value="5">5th Sem</option>
+    <option value="6">6th Sem</option>
+    <option value="7">7th Sem</option>
+    <option value="8">8th Sem</option>
+</select> <br><br>
+<p>What is your biggest goal in college?</p>
+<select id="goal" name="goal">
+    <option value="grades">Get better grades</option>
+    <option value="skills">Learn new skills</option>
+    <option value="career">Build my career</option>
+    <option value="networking">Creating a big network</option>
+</select><br><br>
+<!--radio button-->
+<p>How is your college experience going on?</p>
+<input type="radio" id="excellent" name="experience" value="excellent">
+<label for="excellent">Excellent</label>
+
+<input type="radio" id="good" name="experience" value="good">
+<label for="good">Good</label>
+
+<input type="radio" id="average" name="experience" value="average">
+<label for="average">Average</label>
+
+<input type="radio" id="poor" name="experience" value="poor">
+<label for="poor">Poor</label> <br><br>
+
+<!--checkboxes-->
+<p>Which part of the college you enjoy most?</p>
+
+<input type="checkbox" id="classes" name="interest" value="classes">
+<label for="classes">Classes</label>
+
+<input type="checkbox" id="friends" name="interest" value="friends">
+<label for="friends">Friends</label>
+
+<input type="checkbox" id="events" name="interest" value="events">
+<label for="events">Events</label>
+
+<input type="checkbox" id="sports" name="interest" value="sports">
+<label for="sports">Sports</label>
+
+<input type="checkbox" id="clubs" name="interest" value="clubs">
+<label for="clubs">Clubs</label>
+
+<input type="checkbox" id="something else" name="interest" values="something else">
+<label for="something else">Something else</label>
+<br><br>
+<label for="comments">What would you like to improve or change in your college?</label>
+<br>
+<textarea id="comments" name="comments" rows="5" cols="50" placeholder="Enter your suggestions..."></textarea>
+<br><br>
+<button type="submit">Submit Survey</button> 
+</form>
+</body>
+</html>
